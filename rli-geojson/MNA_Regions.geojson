@@ -13,7 +13,10 @@
             "properties":{ 
                 "Name":"MNA Region One",
                 "description":null,
-                "icon": "MNA.png"
+                "icon": "MNA.png",
+                "style: {
+                    "color": "red"
+                }
             },
             "geometry":{ 
                 "type":"Polygon",

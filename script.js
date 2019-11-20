@@ -365,15 +365,26 @@ $( document ).ready(function() {
 		$.ajax({
 			dataType: `json`,
 			url: `${baseUrl}rli-geojson/${file}`,
-			success: function(data) {
-				console.log(data.name);
+			success: function(data) { 
 
 			    var links = '<div class="btn-group-vertical">';
 
-				geojsonLayers[index] = L.geoJSON(data, {
+				geojsonLayers[index] = L.geoJSON(data, { 
 					onEachFeature: function(feature, layer) {
+						
 						links += `<button class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}/icons/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
-					}
+					},
+					pointToLayer: function(feature, latlng) { 
+						console.log(`${baseUrl}icons/${feature.properties.icon}`);
+						if (turf.getType(feature) === 'Point') {
+							var smallIcon = L.icon({  
+		                        iconUrl: `${baseUrl}icons/${feature.properties.icon}`
+		                    
+		                });
+		                return L.marker(latlng, {icon: smallIcon});
+						}
+		                
+		            },
 				});
 
 				links += '</div>'; 
