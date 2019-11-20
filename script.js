@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 	const baseUrl = `http://127.0.0.1:8080/`;
+	// const baseUrl = `https://rlimap.000webhostapp.com/`;
+	
    	var map = L.map(`map`, {zoomControl: false, scrollWheelZoom: false}).setView([54.71491, -113.89159], 5);
 
 	var light = L.tileLayer(`https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2xybWVkaWEiLCJhIjoiY2szMzhibTFpMDNxNjNob2x2ZGgzM3g3bSJ9.c8YOrU2p00DoW4P-jhv-Mw`, {
@@ -369,16 +371,28 @@ $( document ).ready(function() {
 
 			    var links = '<div class="btn-group-vertical">';
 
-				geojsonLayers[index] = L.geoJSON(data, { 
+				geojsonLayers[index] = L.geoJSON(data, {
+					style: function(feature, layer) {
+						console.log(feature);
+						return {"color": feature.properties.color, "width": 2};
+					},
 					onEachFeature: function(feature, layer) {
-						
-						links += `<button class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}/icons/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
+						// if (layer instanceof L.Marker) {
+						// 	console.log('polygon!');
+						// } else {
+						// 	console.log('other!');
+						// }  
+
+						layer.bindPopup(`<h5 class="text-center">${feature.properties.Name}</h5>`);
+
+						links += `<button class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}images/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
 					},
 					pointToLayer: function(feature, latlng) { 
-						console.log(`${baseUrl}icons/${feature.properties.icon}`);
+						console.log(`${baseUrl}images/${feature.properties.icon}`);
 						if (turf.getType(feature) === 'Point') {
-							var smallIcon = L.icon({  
-		                        iconUrl: `${baseUrl}icons/${feature.properties.icon}`
+							var smallIcon = L.icon({
+							iconAnchor:   [10, 0], // point of the icon which will correspond to marker's location  
+		                        iconUrl: `${baseUrl}images/${feature.properties.icon}`
 		                    
 		                });
 		                return L.marker(latlng, {icon: smallIcon});
