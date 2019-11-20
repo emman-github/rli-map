@@ -32,7 +32,7 @@ $( document ).ready(function() {
 		id: `mapbox.streets`,
 		opacity: 1,
 		transparency: 'true'
-	});
+	}).addTo(map);
 
 	var satellite = L.tileLayer(`https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiY2xybWVkaWEiLCJhIjoiY2szMzhibTFpMDNxNjNob2x2ZGgzM3g3bSJ9.c8YOrU2p00DoW4P-jhv-Mw`, {
 		maxZoom: 18,
@@ -42,8 +42,16 @@ $( document ).ready(function() {
 		id: `mapbox.satellite`,
 		opacity: 0.75,
 		transparency: 'true'
-	}).addTo(map);	
+	});	
 
+googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo(map);
+
+// 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(map);
 
 
 	layers = L.featureGroup(null);
@@ -390,8 +398,8 @@ $( document ).ready(function() {
 					pointToLayer: function(feature, latlng) { 
 						console.log(`${baseUrl}images/${feature.properties.icon}`);
 						if (turf.getType(feature) === 'Point') {
-							var smallIcon = L.icon({
-							iconAnchor:   [10, 0], // point of the icon which will correspond to marker's location  
+							var smallIcon = L.icon({ 
+							iconAnchor:   [13.5, 14], // point of the icon which will correspond to marker's location  
 		                        iconUrl: `${baseUrl}images/${feature.properties.icon}`
 		                    
 		                });

@@ -12,7 +12,8 @@
             "type":"Feature",
             "properties":{ 
                 "Name":"RLI Head Office",
-                "description":"RLI Education is the home base for our Institute's Centralized Finance Team, as well as:<br>-  our sister organization, the Métis Education Foundation<br>- K-12 Métis Education"
+                "description":"RLI Education is the home base for our Institute's Centralized Finance Team, as well as:<br>-  our sister organization, the Métis Education Foundation<br>- K-12 Métis Education",
+                "icon": "Head Office.png"
             },
             "geometry":{ 
                 "type":"Point",
