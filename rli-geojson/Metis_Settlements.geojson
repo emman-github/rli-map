@@ -1,0 +1,132 @@
+{ 
+    "type":"FeatureCollection",
+    "name":"Metis Settlements",
+    "crs":{ 
+        "type":"name",
+        "properties":{ 
+            "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features":[ 
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Buffalo Lake Metis Settlement",
+                "description":"Website: www.buffalolakems.ca",
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -112.425115,
+                    54.500235
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"East Prairie Metis Settlement",
+                "description":null,
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -116.146915,
+                    55.178236
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Elizabeth Metis Settlement",
+                "description":null,
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -110.105003,
+                    54.218935
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Fishing Lake Metis Settlement",
+                "description":null,
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -110.176726,
+                    53.969476
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Gift Lake Metis Settlement",
+                "description":null,
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -115.824732,
+                    55.882133
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Kikino Metis Settlement",
+                "description":null,
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -112.15,
+                    54.4
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Paddle Prairie Metis Settlement",
+                "description":null,
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -117.48274,
+                    57.907238
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Peavine Metis Settlement",
+                "description":null,
+                "icon": "Metis Settlements.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -116.297148,
+                    55.781354
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+{ 
+    "type":"FeatureCollection",
+    "name":"RLI MEF Post-Secondary Endowments",
+    "crs":{ 
+        "type":"name",
+        "properties":{ 
+            "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features":[ 
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Athabasca University",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.308545,
+                    54.714955
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Bow Valley College",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -114.053126,
+                    51.046316
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Concordia University of Edmonton",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.445815,
+                    53.560467
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Grande Prairie Regional College",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -118.818764,
+                    55.175676
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Lakeland College",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -110.872521,
+                    53.350051
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Lethbridge College",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -112.808965,
+                    49.662341
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"MacEwan University",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.50663,
+                    53.547054
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Medicine Hat College",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -110.685472,
+                    50.017832
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Mount Royal University - Calgary, Canada",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -114.132208,
+                    51.009382
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"NAIT",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.504954,
+                    53.568316
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"NorQuest College",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.50604,
+                    53.54347
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Northern Lakes College",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -114.775908,
+                    55.273912
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Portage College, Lac La Biche Campus",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -111.966813,
+                    54.764262
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"SAIT",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -114.088517,
+                    51.064027
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"University of Alberta",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.526319,
+                    53.523219
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"University of Lethbridge",
+                "description":null,
+                "icon": "RLI MEF.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -112.860118,
+                    49.678616
+                ]
+            }
+        }
+    ]
+}

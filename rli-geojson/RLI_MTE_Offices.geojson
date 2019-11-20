@@ -1,0 +1,162 @@
+{ 
+    "type":"FeatureCollection",
+    "name":"RLI MTE Offices",
+    "crs":{ 
+        "type":"name",
+        "properties":{ 
+            "name":"urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features":[ 
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Edmonton MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.53468,
+                    53.559294
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Calgary MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -114.08462,
+                    51.047377
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Red Deer MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -113.813416,
+                    52.26785
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Grande Prairie MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -118.793907,
+                    55.179117
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Peace River MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -117.291096,
+                    56.233604
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"High Prairie MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -116.49265,
+                    55.431106
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Slave Lake MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -114.775712,
+                    55.273844
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Medicine Hat MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -110.662822,
+                    50.028852
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Bonnyville MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -110.743885,
+                    54.269146
+                ]
+            }
+        },
+        { 
+            "type":"Feature",
+            "properties":{ 
+                "Name":"Lac La Biche MTE Office",
+                "description":null,
+                "icon": "RLI Offices.png"
+            },
+            "geometry":{ 
+                "type":"Point",
+                "coordinates":[ 
+                    -111.977405,
+                    54.769637
+                ]
+            }
+        }
+    ]
+}
