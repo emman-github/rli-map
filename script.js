@@ -384,16 +384,19 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 						console.log(feature);
 						return {"color": feature.properties.color, "width": 2};
 					},
-					onEachFeature: function(feature, layer) {
-						// if (layer instanceof L.Marker) {
-						// 	console.log('polygon!');
-						// } else {
-						// 	console.log('other!');
-						// }  
+					onEachFeature: function(feature, layer) {	
+						var latitude;
+						var longitude;
 
-						layer.bindPopup(`<h5 class="text-center">${feature.properties.Name}</h5>`);
+						if (layer instanceof L.Marker) {
+							console.log('marker!');
+						} else if (layer instanceof L.Polygon) {
+							console.log('polygon!');
+						}  
 
-						links += `<button class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}images/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
+						// layer.bindPopup(`<h5 class="text-center">${feature.properties.Name}</h5>`);
+
+						links += `<button data-toggle="" class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}images/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
 					},
 					pointToLayer: function(feature, latlng) { 
 						console.log(`${baseUrl}images/${feature.properties.icon}`);

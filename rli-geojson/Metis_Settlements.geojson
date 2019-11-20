@@ -1,6 +1,6 @@
 { 
     "type":"FeatureCollection",
-    "name":"Metis Settlements",
+    "name":"Métis Settlements",
     "crs":{ 
         "type":"name",
         "properties":{ 
@@ -11,7 +11,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"Buffalo Lake Metis Settlement",
+                "Name":"Buffalo Lake Métis Settlement",
                 "description":"Website: www.buffalolakems.ca",
                 "icon": "Metis Settlements.png"
             },
@@ -26,7 +26,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"East Prairie Metis Settlement",
+                "Name":"East Prairie Métis Settlement",
                 "description":null,
                 "icon": "Metis Settlements.png"
             },
@@ -41,7 +41,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"Elizabeth Metis Settlement",
+                "Name":"Elizabeth Métis Settlement",
                 "description":null,
                 "icon": "Metis Settlements.png"
             },
@@ -56,7 +56,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"Fishing Lake Metis Settlement",
+                "Name":"Fishing Lake Métis Settlement",
                 "description":null,
                 "icon": "Metis Settlements.png"
             },
@@ -71,7 +71,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"Gift Lake Metis Settlement",
+                "Name":"Gift Lake Métis Settlement",
                 "description":null,
                 "icon": "Metis Settlements.png"
             },
@@ -86,7 +86,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"Kikino Metis Settlement",
+                "Name":"Kikino Métis Settlement",
                 "description":null,
                 "icon": "Metis Settlements.png"
             },
@@ -101,7 +101,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"Paddle Prairie Metis Settlement",
+                "Name":"Paddle Prairie Métis Settlement",
                 "description":null,
                 "icon": "Metis Settlements.png"
             },
@@ -116,7 +116,7 @@
         { 
             "type":"Feature",
             "properties":{ 
-                "Name":"Peavine Metis Settlement",
+                "Name":"Peavine Métis Settlement",
                 "description":null,
                 "icon": "Metis Settlements.png"
             },
