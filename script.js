@@ -462,7 +462,13 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 		// console.log(parentId);
 		// console.log(layerId);
 
-		geojsonLayers[parentId].getLayer(layerId).openPopup();
+		if (geojsonLayers[parentId].getLayer(layerId).isPopupOpen()) {
+			geojsonLayers[parentId].getLayer(layerId).closePopup();
+		} else {
+			geojsonLayers[parentId].getLayer(layerId).openPopup();
+		}
+
+		
 
 		console.log(geojsonLayers[parentId].getLayer(layerId));
 	});
