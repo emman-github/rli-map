@@ -405,7 +405,7 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 
 						layer.bindPopup(`<h5 class="text-center">${feature.properties.Name}</h5>`);
 
-						links += `<button data-parent-id="${index}" data-layer-id="${layer._leaflet_id}" class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}images/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
+						links += `<button data-parent-id="${index}" data-layer-id="${layer._leaflet_id}" class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}images/${feature.properties.icon}"><span class="ml-2" style="font-size: 12px;">${feature.properties.Name}</span></button>`;
 					},
 					pointToLayer: function(feature, latlng) { 
 						console.log(`${baseUrl}images/${feature.properties.icon}`);
@@ -463,20 +463,21 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 		// console.log(parentId);
 		// console.log(layerId);
 
-		console.log();
+	
 
 		if (geojsonLayers[parentId].getLayer(layerId).isPopupOpen()) {
+			// alert(1);
 			geojsonLayers[parentId].getLayer(layerId).closePopup(); 
-			map.fitBounds(albertaBorder.getBounds());
+			// map.fitBounds(albertaBorder.getBounds());
 		} else { 
 			geojsonLayers[parentId].getLayer(layerId).openPopup(); 
 			if (geojsonLayers[parentId].getLayer(layerId) instanceof L.Marker) {
-				map.setView(geojsonLayers[parentId].getLayer(layerId).getLatLng());
+				// map.setView(geojsonLayers[parentId].getLayer(layerId).getLatLng());
 			} else if (geojsonLayers[parentId].getLayer(layerId) instanceof L.Polygon) {
-				var latitude = turf.centroid(geojsonLayers[parentId].getLayer(layerId).toGeoJSON()).geometry.coordinates[1];
-				var longitude = turf.centroid(geojsonLayers[parentId].getLayer(layerId).toGeoJSON()).geometry.coordinates[0];
+				// var latitude = turf.centroid(geojsonLayers[parentId].getLayer(layerId).toGeoJSON()).geometry.coordinates[1];
+				// var longitude = turf.centroid(geojsonLayers[parentId].getLayer(layerId).toGeoJSON()).geometry.coordinates[0];
 				
-				map.setView([latitude, longitude]);
+				// map.setView([latitude, longitude]);
 			}
 			
 

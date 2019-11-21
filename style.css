@@ -44,13 +44,13 @@ input[type="radio"] {
 
 #legend {
     overflow: auto;
-    width: 400px;
+    width: 375px;
     height: 92vh;
     background: white;
 }
 
 #accordionExample1 {
-    width: 400px;
+    width: 375px;
 }
 
 html {
