@@ -456,16 +456,30 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 	
 
 	$(document).on('click', '.link-button', function(event) {
+		event.preventDefault();
 		const parentId = parseInt($(this).attr('data-parent-id'));
 		const layerId = parseInt($(this).attr('data-layer-id'));
 
 		// console.log(parentId);
 		// console.log(layerId);
 
+		console.log();
+
 		if (geojsonLayers[parentId].getLayer(layerId).isPopupOpen()) {
-			geojsonLayers[parentId].getLayer(layerId).closePopup();
-		} else {
-			geojsonLayers[parentId].getLayer(layerId).openPopup();
+			geojsonLayers[parentId].getLayer(layerId).closePopup(); 
+			map.fitBounds(albertaBorder.getBounds());
+		} else { 
+			geojsonLayers[parentId].getLayer(layerId).openPopup(); 
+			if (geojsonLayers[parentId].getLayer(layerId) instanceof L.Marker) {
+				map.setView(geojsonLayers[parentId].getLayer(layerId).getLatLng());
+			} else if (geojsonLayers[parentId].getLayer(layerId) instanceof L.Polygon) {
+				var latitude = turf.centroid(geojsonLayers[parentId].getLayer(layerId).toGeoJSON()).geometry.coordinates[1];
+				var longitude = turf.centroid(geojsonLayers[parentId].getLayer(layerId).toGeoJSON()).geometry.coordinates[0];
+				
+				map.setView([latitude, longitude]);
+			}
+			
+
 		}
 
 		
