@@ -384,19 +384,28 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 						console.log(feature);
 						return {"color": feature.properties.color, "width": 2};
 					},
-					onEachFeature: function(feature, layer) {	
-						var latitude;
-						var longitude;
+					onEachFeature: function(feature, layer) {
+					 	layer.addTo(map);
+						console.log(layer._leaflet_id);
+						map.removeLayer(layer);
+						// var latitude;
+						// var longitude;
 
-						if (layer instanceof L.Marker) {
-							console.log('marker!');
-						} else if (layer instanceof L.Polygon) {
-							console.log('polygon!');
-						}  
+						// if (layer instanceof L.Marker) {
+						// 	console.log('marker!');
+						// } else if (layer instanceof L.Polygon) {
+						// 	console.log('polygon!');
+						// }  
 
-						// layer.bindPopup(`<h5 class="text-center">${feature.properties.Name}</h5>`);
+						// console.log(map.getLayer(layer));
 
-						links += `<button data-toggle="" class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}images/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
+						// layer.on('click', function(event) {
+
+						// });
+
+						layer.bindPopup(`<h5 class="text-center">${feature.properties.Name}</h5>`);
+
+						links += `<button data-parent-id="${index}" data-layer-id="${layer._leaflet_id}" class="link-button btn btn-link text-left"><img class="ml-4" src="${baseUrl}images/${feature.properties.icon}"><span class="ml-2" style="font-size: 14px;">${feature.properties.Name}</span></button>`;
 					},
 					pointToLayer: function(feature, latlng) { 
 						console.log(`${baseUrl}images/${feature.properties.icon}`);
@@ -447,7 +456,15 @@ googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
 	
 
 	$(document).on('click', '.link-button', function(event) {
-		console.log(event);
+		const parentId = parseInt($(this).attr('data-parent-id'));
+		const layerId = parseInt($(this).attr('data-layer-id'));
+
+		// console.log(parentId);
+		// console.log(layerId);
+
+		geojsonLayers[parentId].getLayer(layerId).openPopup();
+
+		console.log(geojsonLayers[parentId].getLayer(layerId));
 	});
 
 	$(document).on('change', '.custom-control-input', function(event) {
